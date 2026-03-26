@@ -41,15 +41,15 @@ The assistant core runs on a MacBook Pro, while this device acts purely as an ex
 - No need to rebuild or replace the hardware UI when updating the assistant  
 - Fits naturally into an existing workflow where the Mac is already a primary tool
 
-![0](./assets/3798beed-ea9f-4c9b-a82a-88520f0b4b75)
-![1](./assets/860f56a9-a52f-44d5-ab8b-a56533c1e211)
-![2](./assets/d0059396-b980-4d71-b79d-4e2b049a75ff)
-![3](./assets/87b11408-1773-4d03-bd46-2371550b0ea9)
-![4](./assets/1418d08f-af80-4c5d-8995-1582423fe2bd)
-![5](./assets/db6d2984-5e7f-481d-8a8e-3c897bee5dec)
-![6](./assets/5d931ac9-cc4a-4e0f-a17f-0da6ecd29bf1)
-![7](./assets/07fe6376-ff25-4386-b7d1-6e6b30585218)
-![8](./assets/7ab77e41-aee0-4542-9f83-d9f7f709cd3a)
+<img src="./assets/1.jpg" width="50%" />
+<img src="./assets/2.jpg" width="50%" />
+<img src="./assets/3.jpg" width="50%" />
+<img src="./assets/4.jpg" width="50%" />
+<img src="./assets/5.jpg" width="50%" />
+<img src="./assets/6.jpg" width="50%" />
+<img src="./assets/7.jpg" width="50%" />
+<img src="./assets/8.jpg" width="50%" />
+<img src="./assets/9.jpg" width="50%" />
 
 ## License
 
