@@ -6,6 +6,7 @@
 #include "ServerManager.h"
 #include "DisplayManager.h"
 #include "LightManager.h"
+#include <ESPmDNS.h>
 
 ServerManager::ServerManager(DisplayManager &displayManager, LightManager &lightManager)
     : server(80), displayManager(displayManager), lightManager(lightManager) {}
@@ -13,6 +14,7 @@ ServerManager::ServerManager(DisplayManager &displayManager, LightManager &light
 void ServerManager::setup()
 {
     WiFi.begin(ssid, password);
+    MDNS.begin("akira");
 
     while (WiFi.status() != WL_CONNECTED)
     {
