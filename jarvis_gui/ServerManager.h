@@ -15,8 +15,8 @@ private:
     LightManager lightManager;
     WebServer server;
 
-    const char *ssid = "TP-Link_27D4";
-    const char *password = "78877467";
+    const char *ssid = "Bustle_Room";
+    const char *password = "bustlesunset";
     bool isLoading = false;
     bool isRebooting = false;
     unsigned long previousMillis = 0;

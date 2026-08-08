@@ -26,6 +26,7 @@ void ServerManager::setup()
     String ip = WiFi.localIP().toString();
     displayManager.displayText("Connected " + ip);
     lightManager.turnOnGreen();
+    delay(5000);
 
     configTime(3 * 3600, 0, "pool.ntp.org", "time.nist.gov");
 
