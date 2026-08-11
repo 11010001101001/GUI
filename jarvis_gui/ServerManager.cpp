@@ -30,7 +30,7 @@ void ServerManager::setup()
     lightManager.turnOnGreen();
     delay(5000);
 
-    configTime(3 * 3600, 0, "pool.ntp.org", "time.nist.gov");
+    configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
 
     handleStandby();
 }
