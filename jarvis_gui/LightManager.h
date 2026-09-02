@@ -36,6 +36,7 @@ public:
 private:
     Adafruit_NeoPixel pixels;
     Color black = {.r = 0, .g = 0, .b = 0};
+    Color white = {.r = 255, .g = 255, .b = 255};
     Color magenta = {.r = 255, .g = 0, .b = 255};
     Color cyan = {.r = 0, .g = 255, .b = 255};
     Color red = {.r = 255, .g = 0, .b = 0};

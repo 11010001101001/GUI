@@ -49,7 +49,7 @@ void LightManager::setColorWithAnimation(Color color)
 
 void LightManager::blink()
 {
-    pixels.setPixelColor(0, pixels.Color(cyan.r, cyan.g, cyan.b));
+    pixels.setPixelColor(0, pixels.Color(white.r, white.g, white.b));
     pixels.show();
     delay(100);
     pixels.setPixelColor(0, pixels.Color(black.r, black.g, black.b));
