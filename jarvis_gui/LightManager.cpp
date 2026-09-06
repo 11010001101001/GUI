@@ -5,7 +5,7 @@
 LightManager::LightManager()
     : pixels(1, 5, NEO_GRB + NEO_KHZ800) {}
 
-void LightManager::setColorWithAnimation(Color color, int pause)
+void LightManager::setColorWithAnimation(Color color, float pause)
 {
     bool isAnimating = currentColor != color;
 
@@ -49,8 +49,8 @@ void LightManager::setColorWithAnimation(Color color, int pause)
 
 void LightManager::showLoading()
 {
-    setColorWithAnimation(white, 5);
-    setColorWithAnimation(black, 5);
+    setColorWithAnimation(magenta, 5);
+    setColorWithAnimation(cyan, 5);
 }
 
 void LightManager::turnOnCyan()
@@ -76,11 +76,6 @@ void LightManager::turnOnRed()
 void LightManager::turnOnBlack()
 {
     setColorWithAnimation(black);
-}
-
-void LightManager::turnOnOrange()
-{
-    setColorWithAnimation(orange);
 }
 
 void LightManager::setup()

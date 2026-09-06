@@ -24,14 +24,13 @@ public:
 
     LightManager();
     void setup();
-    void setColorWithAnimation(Color color, int pause = 1);
+    void setColorWithAnimation(Color color, float pause = 0.5);
     void showLoading();
     void turnOnCyan();
     void turnOnGreen();
     void turnOnMagenta();
     void turnOnRed();
     void turnOnBlack();
-    void turnOnOrange();
 
 private:
     Adafruit_NeoPixel pixels;
