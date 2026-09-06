@@ -24,7 +24,7 @@ public:
 
     LightManager();
     void setup();
-    void setColorWithAnimation(Color color, int pause = 3);
+    void setColorWithAnimation(Color color, int pause = 1);
     void showLoading();
     void turnOnCyan();
     void turnOnGreen();

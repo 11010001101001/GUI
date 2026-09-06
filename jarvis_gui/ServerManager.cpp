@@ -27,7 +27,7 @@ void ServerManager::setup()
     
     displayManager.displayText("Connected", 2);
     lightManager.turnOnGreen();
-    delay(0.5);
+    delay(2);
 
     configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
     handleStandby();
