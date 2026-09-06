@@ -54,12 +54,12 @@ void DisplayManager::displayImage(DisplayManager::ImagesCategory category)
     }
 }
 
-void DisplayManager::displayText(String text)
+void DisplayManager::displayText(String text, int size)
 {
     isOn = true;
     display.invertDisplay(false);
     display.clearDisplay();
-    display.setTextSize(1);
+    display.setTextSize(size);
     display.setCursor(0, 0);
     display.print(text);
     display.display();

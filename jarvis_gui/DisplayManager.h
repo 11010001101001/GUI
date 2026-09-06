@@ -23,7 +23,7 @@ public:
 
     void setup();
     void displayImage(ImagesCategory category);
-    void displayText(String text);
+    void displayText(String text, int size = 1);
     void displayOff();
 
 private:

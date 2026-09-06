@@ -5,7 +5,7 @@
 LightManager::LightManager()
     : pixels(1, 5, NEO_GRB + NEO_KHZ800) {}
 
-void LightManager::setColorWithAnimation(Color color)
+void LightManager::setColorWithAnimation(Color color, int pause)
 {
     bool isAnimating = currentColor != color;
 
@@ -41,20 +41,16 @@ void LightManager::setColorWithAnimation(Color color)
         pixels.setPixelColor(0, pixels.Color(currentColor.r, currentColor.g, currentColor.b));
         pixels.show();
 
-        delay(1);
+        delay(pause);
 
         isAnimating = currentColor != color;
     };
 }
 
-void LightManager::blink()
+void LightManager::showLoading()
 {
-    pixels.setPixelColor(0, pixels.Color(white.r, white.g, white.b));
-    pixels.show();
-    delay(100);
-    pixels.setPixelColor(0, pixels.Color(black.r, black.g, black.b));
-    pixels.show();
-    delay(1500);
+    setColorWithAnimation(white, 5);
+    setColorWithAnimation(black, 5);
 }
 
 void LightManager::turnOnCyan()

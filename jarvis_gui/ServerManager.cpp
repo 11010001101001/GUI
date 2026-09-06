@@ -18,20 +18,18 @@ void ServerManager::setup()
 
     while (WiFi.status() != WL_CONNECTED)
     {
-        displayManager.displayText("Connecting...");
+        displayManager.displayText("Connecting\nto Wi-Fi", 2);
         lightManager.turnOnRed();
         delay(500);
     }
 
     handleRequests();
-
-    String ip = WiFi.localIP().toString();
-    displayManager.displayText("Connected " + ip);
+    
+    displayManager.displayText("Connected", 2);
     lightManager.turnOnGreen();
-    delay(5000);
+    delay(0.5);
 
     configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
-
     handleStandby();
 }
 
@@ -57,7 +55,7 @@ void ServerManager::serveClient()
 
     if (isLoading)
     {
-        lightManager.blink();
+        lightManager.showLoading();
     }
 
     scheduleReboot();
