@@ -1,3 +1,5 @@
+#pragma once
+#include <stdint.h>
 #define listen_width 128
 #define listen_height 64
 static const uint8_t listen_bits[] = {

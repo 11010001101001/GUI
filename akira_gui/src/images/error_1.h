@@ -1,3 +1,5 @@
+#pragma once
+#include <stdint.h>
 #define error_1_width 128
 #define error_1_height 64
 static const uint8_t error_1_bits[] = {

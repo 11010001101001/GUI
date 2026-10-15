@@ -1,3 +1,5 @@
+#pragma once
+#include <stdint.h>
 #define speak_2_width 128
 #define speak_2_height 64
 static const uint8_t speak_2_bits[] = {
